@@ -1,7 +1,7 @@
 /* global $ */
 
 // BELOW Update the songs array with four of your favorites songs.
-var songs = [];
+var songs = ["Unravel", "Hikarunara", "Again", "Question"];
 // BELOW Add 4 More arrays to store images_links, artists, song lengths, and links for each song
 // Make sure they match the same order as your array above
 
@@ -9,7 +9,10 @@ var songs = [];
 
 function displaySongInfo(){
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
-
+    for (var count = 0; count < songs.length; count++) {
+        $("#songs").append(songs[count]);
+        
+    }
 }
 
 function emptySongInfo(){
