@@ -16,9 +16,9 @@ h1 {
 
 #images {
     display: block;
-    height: 10%;
-    width: auto;
+    width: 10%;
     margin: 20px;
+    overflow: hidden;
 }
 
 #songs {
