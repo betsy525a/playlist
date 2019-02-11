@@ -14,9 +14,10 @@ h1 {
     padding: 25px 0px;
 }
 
-#images {
+img {
     display: block;
-    width: 10%;
+    height: auto;
+    width: 100%;
     margin: 20px;
     overflow: hidden;
 }
@@ -65,6 +66,13 @@ button {
     padding: 5px 10px;
 }
 
+.sameDiv {
+    height: 306%;
+}
+
+.diffDiv {
+    height: 17.3%;
+}
 /*
 #name {
     text-align: center;

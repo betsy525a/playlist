@@ -1,7 +1,7 @@
 /* global $ */
 
 // BELOW Update the songs array with four of your favorites songs.
-var songs = ["Unravel", "Hikarunara", "Again", "Question"];
+var songs = ["Tokyo Ghoul - Unravel", "Your Lie in April - Hikarunara", "FullMetal Alchemist - Again", "Assasination Classroom - Question"];
 // BELOW Add 4 More arrays to store images_links, artists, song lengths, and links for each song
 // Make sure they match the same order as your array above
 var images =["https://i.ytimg.com/vi/7aMOurgDB-o/maxresdefault.jpg", "https://i.ytimg.com/vi/3mOd1X1UObg/maxresdefault.jpg", "https://i.ytimg.com/vi/2uq34TeWEdQ/maxresdefault.jpg", "https://darkstarzero.files.wordpress.com/2016/01/screenshot-1_27_2016-11_06_56-pm.png"];
@@ -13,7 +13,7 @@ var links = ["https://www.youtube.com/watch?v=7aMOurgDB-o&t=9s", "https://www.yo
 function displaySongInfo(){
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
     songs.forEach(function(song){
-        $("#songs").append(song + "<br><hr>");
+        $("#songs").append("<div class='sameDiv'>" + song + "</div>" + "<br><hr>");
     });
     
     images.forEach(function(img){
@@ -21,16 +21,16 @@ function displaySongInfo(){
     });
     
     artists.forEach(function(name){
-        $("#artists").append(name + "<br><hr>");
+        $("#artists").append("<div class='sameDiv'>" + name + "</div>" + "<br><hr>");
     });
     
     lengths.forEach(function(time){
-        $("#lengths").append(time + "<br><hr>");
+        $("#lengths").append("<div class='sameDiv'>" + time + "</div>" + "<br><hr>");
     });
     
     var count = 0;
     links.forEach(function(link){
-        $("#links").append("<a href=" + link + "> Youtube Link: " + songs[count]+ "</a><br><hr>");
+        $("#links").append("<div class='diffDiv'>" + "<a href=" + link + "> Youtube Link: " + songs[count]+ "</a>" + "</div>" + "<br><hr>");
         count++;
     });
 }
